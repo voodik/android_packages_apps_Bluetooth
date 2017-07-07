@@ -110,7 +110,7 @@ public class Config {
     @SuppressWarnings("rawtypes")
     private static synchronized boolean addAudioProfiles(String serviceName) {
         boolean isA2dpSinkEnabled = SystemProperties.getBoolean("persist.service.bt.a2dp.sink",
-                                                                                         false);
+                                                                                         true);
         boolean isHfpClientEnabled = SystemProperties.getBoolean("persist.service.bt.hfp.client",
                                                                                          false);
         Log.d(TAG, "addA2dpProfile: isA2dpSinkEnabled = " + isA2dpSinkEnabled+"isHfpClientEnabled "
